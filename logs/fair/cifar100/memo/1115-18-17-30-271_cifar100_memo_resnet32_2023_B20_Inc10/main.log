@@ -1,0 +1,189 @@
+2023-11-15 18:17:30,272 [trainer.py] => Time Str >>> 1115-18-17-30-271
+2023-11-15 18:17:31,323 [data_manager.py] => [56, 12, 68, 0, 82, 66, 91, 44, 46, 20, 35, 76, 83, 9, 16, 89, 26, 24, 2, 43, 84, 96, 18, 21, 8, 4, 61, 37, 95, 30, 14, 50, 81, 6, 57, 64, 10, 85, 42, 41, 19, 5, 31, 1, 11, 59, 36, 97, 40, 60, 79, 23, 67, 51, 62, 27, 54, 78, 13, 72, 34, 98, 94, 45, 7, 80, 90, 65, 99, 15, 38, 88, 73, 74, 75, 49, 29, 32, 48, 63, 71, 28, 58, 93, 69, 39, 77, 47, 53, 17, 22, 86, 52, 3, 92, 33, 55, 70, 25, 87]
+2023-11-15 18:17:31,504 [memo.py] => >>> train generalized blocks:True train_adaptive:False
+2023-11-15 18:17:31,504 [trainer.py] => Start time:2023-11-15 18:17:31.504492
+2023-11-15 18:17:31,505 [trainer.py] => All params: 112016
+2023-11-15 18:17:31,505 [trainer.py] => Trainable params: 112016
+2023-11-15 18:17:31,511 [inc_net.py] => SpecializedResNet_cifar(
+  (final_stage): Sequential(
+    (0): ResNetBasicblock(
+      (conv_a): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): DownsampleA(
+        (avg): AvgPool2d(kernel_size=1, stride=2, padding=0)
+      )
+    )
+    (1): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+)
+2023-11-15 18:17:31,512 [memo.py] => Learning on 0-20
+2023-11-15 18:17:31,513 [memo.py] => All params: 466169
+2023-11-15 18:17:31,513 [memo.py] => Trainable params: 466169
+2023-11-15 18:18:02,048 [memo.py] => Task 0, Epoch 1/1 => Loss 3.017, Train_accy 14.78, Test_accy 22.85
+2023-11-15 18:18:02,051 [base.py] => Reducing exemplars...(300 per classes)
+2023-11-15 18:18:02,051 [base.py] => Constructing exemplars...(300 per classes)
+2023-11-15 18:23:19,284 [memo.py] => Train Generalized Blocks...
+2023-11-15 18:23:19,284 [memo.py] => Exemplar size: 6000
+2023-11-15 18:23:19,284 [trainer.py] => CNN: {'total': 22.85, '00-09': 34.7, '10-19': 11.0, 'old': 0, 'new': 22.85}
+2023-11-15 18:23:19,285 [trainer.py] => NME: {'total': 25.1, '00-09': 28.3, '10-19': 21.9, 'old': 0, 'new': 25.1}
+2023-11-15 18:23:19,285 [trainer.py] => CNN top1 curve: [22.85]
+2023-11-15 18:23:19,285 [trainer.py] => CNN top5 curve: [62.1]
+2023-11-15 18:23:19,285 [trainer.py] => NME top1 curve: [25.1]
+2023-11-15 18:23:19,285 [trainer.py] => NME top5 curve: [64.8]
+
+2023-11-15 18:23:19,285 [trainer.py] => All params: 466169
+2023-11-15 18:23:19,285 [trainer.py] => Trainable params: 466169
+2023-11-15 18:23:19,295 [memo.py] => Learning on 20-30
+2023-11-15 18:23:19,295 [memo.py] => All params: 819577
+2023-11-15 18:23:19,295 [memo.py] => Trainable params: 468089
+2023-11-15 18:23:48,977 [memo.py] => Task 1, Epoch 1/1 => Loss 4.415, Loss_clf 2.878, Loss_aux  1.536, Train_accy 15.86, Test_accy 19.20
+2023-11-15 18:23:49,054 [base.py] => Reducing exemplars...(200 per classes)
+2023-11-15 18:26:12,644 [base.py] => Constructing exemplars...(200 per classes)
+2023-11-15 18:29:06,264 [memo.py] => Exemplar size: 6000
+2023-11-15 18:29:06,264 [trainer.py] => CNN: {'total': 17.57, '00-09': 11.9, '10-19': 8.9, '20-29': 31.9, 'old': 10.4, 'new': 31.9}
+2023-11-15 18:29:06,264 [trainer.py] => NME: {'total': 23.2, '00-09': 25.7, '10-19': 20.3, '20-29': 23.6, 'old': 23.0, 'new': 23.6}
+2023-11-15 18:29:06,264 [trainer.py] => CNN top1 curve: [22.85, 17.57]
+2023-11-15 18:29:06,264 [trainer.py] => CNN top5 curve: [62.1, 54.17]
+2023-11-15 18:29:06,264 [trainer.py] => NME top1 curve: [25.1, 23.2]
+2023-11-15 18:29:06,264 [trainer.py] => NME top5 curve: [64.8, 58.17]
+
+2023-11-15 18:29:06,265 [trainer.py] => All params: 819577
+2023-11-15 18:29:06,265 [trainer.py] => Trainable params: 468089
+2023-11-15 18:29:06,273 [memo.py] => Learning on 30-40
+2023-11-15 18:29:06,274 [memo.py] => All params: 1174915
+2023-11-15 18:29:06,274 [memo.py] => Trainable params: 471939
+2023-11-15 18:29:36,121 [memo.py] => Task 2, Epoch 1/1 => Loss 4.710, Loss_clf 3.106, Loss_aux  1.604, Train_accy 14.55, Test_accy 13.58
+2023-11-15 18:29:36,122 [base.py] => Reducing exemplars...(150 per classes)
+2023-11-15 18:33:10,848 [base.py] => Constructing exemplars...(150 per classes)
+2023-11-15 18:36:05,226 [memo.py] => Exemplar size: 6000
+2023-11-15 18:36:05,226 [trainer.py] => CNN: {'total': 11.3, '00-09': 2.3, '10-19': 0.8, '20-29': 7.2, '30-39': 34.9, 'old': 3.43, 'new': 34.9}
+2023-11-15 18:36:05,227 [trainer.py] => NME: {'total': 19.85, '00-09': 25.0, '10-19': 18.5, '20-29': 20.6, '30-39': 15.3, 'old': 21.37, 'new': 15.3}
+2023-11-15 18:36:05,227 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3]
+2023-11-15 18:36:05,227 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55]
+2023-11-15 18:36:05,227 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85]
+2023-11-15 18:36:05,227 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95]
+
+2023-11-15 18:36:05,227 [trainer.py] => All params: 1174915
+2023-11-15 18:36:05,228 [trainer.py] => Trainable params: 471939
+2023-11-15 18:36:05,236 [memo.py] => Learning on 40-50
+2023-11-15 18:36:05,236 [memo.py] => All params: 1531533
+2023-11-15 18:36:05,237 [memo.py] => Trainable params: 477069
+2023-11-15 18:36:36,339 [memo.py] => Task 3, Epoch 1/1 => Loss 4.798, Loss_clf 3.228, Loss_aux  1.570, Train_accy 16.16, Test_accy 13.74
+2023-11-15 18:36:36,340 [base.py] => Reducing exemplars...(120 per classes)
+2023-11-15 18:41:19,619 [base.py] => Constructing exemplars...(120 per classes)
+2023-11-15 18:44:12,651 [memo.py] => Exemplar size: 6000
+2023-11-15 18:44:12,651 [trainer.py] => CNN: {'total': 10.9, '00-09': 4.4, '10-19': 4.6, '20-29': 8.4, '30-39': 3.9, '40-49': 33.2, 'old': 5.32, 'new': 33.2}
+2023-11-15 18:44:12,651 [trainer.py] => NME: {'total': 17.12, '00-09': 21.3, '10-19': 18.9, '20-29': 19.7, '30-39': 12.4, '40-49': 13.3, 'old': 18.08, 'new': 13.3}
+2023-11-15 18:44:12,651 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9]
+2023-11-15 18:44:12,651 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2]
+2023-11-15 18:44:12,651 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12]
+2023-11-15 18:44:12,651 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7]
+
+2023-11-15 18:44:12,652 [trainer.py] => All params: 1531533
+2023-11-15 18:44:12,652 [trainer.py] => Trainable params: 477069
+2023-11-15 18:44:12,662 [memo.py] => Learning on 50-60
+2023-11-15 18:44:12,662 [memo.py] => All params: 1889431
+2023-11-15 18:44:12,663 [memo.py] => Trainable params: 483479
+2023-11-15 18:44:43,732 [memo.py] => Task 4, Epoch 1/1 => Loss 4.845, Loss_clf 3.309, Loss_aux  1.536, Train_accy 17.54, Test_accy 11.95
+2023-11-15 18:44:43,733 [base.py] => Reducing exemplars...(100 per classes)
+2023-11-15 18:50:31,609 [base.py] => Constructing exemplars...(100 per classes)
+2023-11-15 18:53:24,763 [memo.py] => Exemplar size: 6000
+2023-11-15 18:53:24,763 [trainer.py] => CNN: {'total': 10.08, '00-09': 3.1, '10-19': 3.3, '20-29': 4.5, '30-39': 3.8, '40-49': 6.9, '50-59': 38.9, 'old': 4.32, 'new': 38.9}
+2023-11-15 18:53:24,763 [trainer.py] => NME: {'total': 15.88, '00-09': 17.7, '10-19': 15.7, '20-29': 21.0, '30-39': 11.9, '40-49': 11.3, '50-59': 17.7, 'old': 15.52, 'new': 17.7}
+2023-11-15 18:53:24,764 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9, 10.08]
+2023-11-15 18:53:24,764 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2, 33.63]
+2023-11-15 18:53:24,764 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12, 15.88]
+2023-11-15 18:53:24,764 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7, 41.8]
+
+2023-11-15 18:53:24,765 [trainer.py] => All params: 1889431
+2023-11-15 18:53:24,765 [trainer.py] => Trainable params: 483479
+2023-11-15 18:53:24,776 [memo.py] => Learning on 60-70
+2023-11-15 18:53:24,777 [memo.py] => All params: 2248609
+2023-11-15 18:53:24,777 [memo.py] => Trainable params: 491169
+2023-11-15 18:53:56,417 [memo.py] => Task 5, Epoch 1/1 => Loss 5.121, Loss_clf 3.472, Loss_aux  1.649, Train_accy 14.57, Test_accy 11.93
+2023-11-15 18:53:56,418 [base.py] => Reducing exemplars...(85 per classes)
+2023-11-15 19:01:09,663 [base.py] => Constructing exemplars...(85 per classes)
+2023-11-15 19:04:14,188 [memo.py] => Exemplar size: 5950
+2023-11-15 19:04:14,188 [trainer.py] => CNN: {'total': 8.57, '00-09': 4.4, '10-19': 3.6, '20-29': 2.2, '30-39': 0.8, '40-49': 5.6, '50-59': 5.8, '60-69': 37.6, 'old': 3.73, 'new': 37.6}
+2023-11-15 19:04:14,188 [trainer.py] => NME: {'total': 14.49, '00-09': 18.6, '10-19': 13.5, '20-29': 22.8, '30-39': 10.4, '40-49': 11.0, '50-59': 16.7, '60-69': 8.4, 'old': 15.5, 'new': 8.4}
+2023-11-15 19:04:14,188 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9, 10.08, 8.57]
+2023-11-15 19:04:14,189 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2, 33.63, 30.76]
+2023-11-15 19:04:14,189 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12, 15.88, 14.49]
+2023-11-15 19:04:14,189 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7, 41.8, 38.81]
+
+2023-11-15 19:04:14,189 [trainer.py] => All params: 2248609
+2023-11-15 19:04:14,190 [trainer.py] => Trainable params: 491169
+2023-11-15 19:04:14,199 [memo.py] => Learning on 70-80
+2023-11-15 19:04:14,201 [memo.py] => All params: 2609067
+2023-11-15 19:04:14,202 [memo.py] => Trainable params: 500139
+2023-11-15 19:04:47,806 [memo.py] => Task 6, Epoch 1/1 => Loss 5.063, Loss_clf 3.488, Loss_aux  1.575, Train_accy 16.55, Test_accy 11.45
+2023-11-15 19:04:47,808 [base.py] => Reducing exemplars...(75 per classes)
+2023-11-15 19:13:29,512 [base.py] => Constructing exemplars...(75 per classes)
+2023-11-15 19:16:32,511 [memo.py] => Exemplar size: 6000
+2023-11-15 19:16:32,512 [trainer.py] => CNN: {'total': 8.93, '00-09': 9.0, '10-19': 0.1, '20-29': 1.7, '30-39': 2.3, '40-49': 4.9, '50-59': 8.3, '60-69': 0.4, '70-79': 44.7, 'old': 3.81, 'new': 44.7}
+2023-11-15 19:16:32,512 [trainer.py] => NME: {'total': 13.26, '00-09': 16.5, '10-19': 12.1, '20-29': 16.8, '30-39': 10.5, '40-49': 11.6, '50-59': 16.4, '60-69': 8.4, '70-79': 13.8, 'old': 13.19, 'new': 13.8}
+2023-11-15 19:16:32,512 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9, 10.08, 8.57, 8.93]
+2023-11-15 19:16:32,512 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2, 33.63, 30.76, 29.19]
+2023-11-15 19:16:32,512 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12, 15.88, 14.49, 13.26]
+2023-11-15 19:16:32,513 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7, 41.8, 38.81, 36.48]
+
+2023-11-15 19:16:32,513 [trainer.py] => All params: 2609067
+2023-11-15 19:16:32,514 [trainer.py] => Trainable params: 500139
+2023-11-15 19:16:32,529 [memo.py] => Learning on 80-90
+2023-11-15 19:16:32,530 [memo.py] => All params: 2970805
+2023-11-15 19:16:32,530 [memo.py] => Trainable params: 510389
+2023-11-15 19:17:06,541 [memo.py] => Task 7, Epoch 1/1 => Loss 4.964, Loss_clf 3.476, Loss_aux  1.488, Train_accy 19.21, Test_accy 7.28
+2023-11-15 19:17:06,543 [base.py] => Reducing exemplars...(66 per classes)
+2023-11-15 19:26:59,789 [base.py] => Constructing exemplars...(66 per classes)
+2023-11-15 19:29:58,297 [memo.py] => Exemplar size: 5940
+2023-11-15 19:29:58,298 [trainer.py] => CNN: {'total': 6.33, '00-09': 0.4, '10-19': 0.9, '20-29': 0.0, '30-39': 0.0, '40-49': 0.6, '50-59': 3.2, '60-69': 0.3, '70-79': 0.0, '80-89': 51.6, 'old': 0.68, 'new': 51.6}
+2023-11-15 19:29:58,298 [trainer.py] => NME: {'total': 13.06, '00-09': 13.8, '10-19': 12.1, '20-29': 17.0, '30-39': 9.8, '40-49': 11.7, '50-59': 17.5, '60-69': 5.8, '70-79': 14.7, '80-89': 15.1, 'old': 12.8, 'new': 15.1}
+2023-11-15 19:29:58,299 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9, 10.08, 8.57, 8.93, 6.33]
+2023-11-15 19:29:58,299 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2, 33.63, 30.76, 29.19, 24.07]
+2023-11-15 19:29:58,299 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12, 15.88, 14.49, 13.26, 13.06]
+2023-11-15 19:29:58,299 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7, 41.8, 38.81, 36.48, 36.0]
+
+2023-11-15 19:29:58,300 [trainer.py] => All params: 2970805
+2023-11-15 19:29:58,301 [trainer.py] => Trainable params: 510389
+2023-11-15 19:29:58,317 [memo.py] => Learning on 90-100
+2023-11-15 19:29:58,318 [memo.py] => All params: 3333823
+2023-11-15 19:29:58,319 [memo.py] => Trainable params: 521919
+2023-11-15 19:30:32,219 [memo.py] => Task 8, Epoch 1/1 => Loss 5.113, Loss_clf 3.583, Loss_aux  1.531, Train_accy 16.26, Test_accy 8.40
+2023-11-15 19:30:32,221 [base.py] => Reducing exemplars...(60 per classes)
+2023-11-15 19:41:17,633 [base.py] => Constructing exemplars...(60 per classes)
+2023-11-15 19:44:17,267 [memo.py] => Exemplar size: 6000
+2023-11-15 19:44:17,267 [trainer.py] => CNN: {'total': 5.42, '00-09': 1.5, '10-19': 0.1, '20-29': 1.8, '30-39': 0.1, '40-49': 1.3, '50-59': 4.2, '60-69': 1.3, '70-79': 0.7, '80-89': 2.9, '90-99': 40.3, 'old': 1.54, 'new': 40.3}
+2023-11-15 19:44:17,267 [trainer.py] => NME: {'total': 12.51, '00-09': 17.3, '10-19': 9.3, '20-29': 18.7, '30-39': 7.2, '40-49': 10.5, '50-59': 14.4, '60-69': 7.3, '70-79': 9.6, '80-89': 13.5, '90-99': 17.3, 'old': 11.98, 'new': 17.3}
+2023-11-15 19:44:17,268 [trainer.py] => CNN top1 curve: [22.85, 17.57, 11.3, 10.9, 10.08, 8.57, 8.93, 6.33, 5.42]
+2023-11-15 19:44:17,268 [trainer.py] => CNN top5 curve: [62.1, 54.17, 40.55, 37.2, 33.63, 30.76, 29.19, 24.07, 22.62]
+2023-11-15 19:44:17,268 [trainer.py] => NME top1 curve: [25.1, 23.2, 19.85, 17.12, 15.88, 14.49, 13.26, 13.06, 12.51]
+2023-11-15 19:44:17,268 [trainer.py] => NME top5 curve: [64.8, 58.17, 50.95, 43.7, 41.8, 38.81, 36.48, 36.0, 34.12]
+
+2023-11-15 19:44:17,268 [trainer.py] => Start Time:1115-18-17-31-504
+2023-11-15 19:44:17,268 [trainer.py] => End Time:1115-19-44-17-268

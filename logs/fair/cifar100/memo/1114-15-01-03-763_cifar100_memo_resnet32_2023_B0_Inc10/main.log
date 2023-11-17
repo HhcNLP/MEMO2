@@ -1,0 +1,49 @@
+2023-11-14 15:01:03,764 [trainer.py] => Time Str >>> 1114-15-01-03-763
+2023-11-14 15:01:04,950 [data_manager.py] => [56, 12, 68, 0, 82, 66, 91, 44, 46, 20, 35, 76, 83, 9, 16, 89, 26, 24, 2, 43, 84, 96, 18, 21, 8, 4, 61, 37, 95, 30, 14, 50, 81, 6, 57, 64, 10, 85, 42, 41, 19, 5, 31, 1, 11, 59, 36, 97, 40, 60, 79, 23, 67, 51, 62, 27, 54, 78, 13, 72, 34, 98, 94, 45, 7, 80, 90, 65, 99, 15, 38, 88, 73, 74, 75, 49, 29, 32, 48, 63, 71, 28, 58, 93, 69, 39, 77, 47, 53, 17, 22, 86, 52, 3, 92, 33, 55, 70, 25, 87]
+2023-11-14 15:01:05,106 [memo.py] => >>> train generalized blocks:True train_adaptive:False
+2023-11-14 15:01:05,106 [trainer.py] => Start time:1114-15-01-05-106
+2023-11-14 15:01:05,106 [trainer.py] => All params: 112016
+2023-11-14 15:01:05,107 [trainer.py] => Trainable params: 112016
+2023-11-14 15:01:05,113 [inc_net.py] => SpecializedResNet_cifar(
+  (final_stage): Sequential(
+    (0): ResNetBasicblock(
+      (conv_a): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): DownsampleA(
+        (avg): AvgPool2d(kernel_size=1, stride=2, padding=0)
+      )
+    )
+    (1): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): ResNetBasicblock(
+      (conv_a): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_a): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv_b): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn_b): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+)
+2023-11-14 15:01:05,115 [memo.py] => Learning on 0-10
+2023-11-14 15:01:05,115 [memo.py] => All params: 464869
+2023-11-14 15:01:05,115 [memo.py] => Trainable params: 464869
+2023-11-14 15:01:39,376 [memo.py] => Task 0, Epoch 1/200 => Loss 2.819, Train_accy 17.48, Test_accy 17.70
+2023-11-14 15:01:55,900 [memo.py] => Task 0, Epoch 2/200 => Loss 2.024, Train_accy 28.44

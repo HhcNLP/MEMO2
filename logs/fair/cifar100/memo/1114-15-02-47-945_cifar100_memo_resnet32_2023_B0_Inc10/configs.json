@@ -1,0 +1,50 @@
+{
+  "alpha_aux": 1.0,
+  "batch_size": 128,
+  "config": "./exps/memo.json",
+  "convnet_type": "memo_resnet32",
+  "csv_name": "cifar100_2023_memo_resnet32_B0_Inc10",
+  "dataset": "cifar100",
+  "debug": false,
+  "device": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "epochs": 170,
+  "exp_name": "1114-15-02-47-945_cifar100_memo_resnet32_2023_B0_Inc10",
+  "fixed_memory": false,
+  "increment": 10,
+  "init_cls": 10,
+  "init_epoch": 200,
+  "init_lr": 0.1,
+  "init_lr_decay": 0.1,
+  "init_milestones": [
+    60,
+    120,
+    170
+  ],
+  "init_weight_decay": 0.0005,
+  "logfilename": "logs/fair/cifar100/memo/1114-15-02-47-945_cifar100_memo_resnet32_2023_B0_Inc10",
+  "lrate": 0.1,
+  "lrate_decay": 0.1,
+  "memory_per_class": 20,
+  "memory_size": 3312,
+  "milestones": [
+    80,
+    120,
+    150
+  ],
+  "model_name": "memo",
+  "prefix": "fair",
+  "scheduler": "steplr",
+  "seed": 2023,
+  "shuffle": true,
+  "skip": false,
+  "t_max": null,
+  "time_str": "1114-15-02-47-945",
+  "train_adaptive": false,
+  "train_base": true,
+  "weight_decay": 0.0002
+}
